@@ -1,0 +1,51 @@
+.card {
+    display: block; //width: 100%; 
+    text-align: center;
+}
+
+.card__img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.card__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-bottom: 10px;
+        line-height: 1.5;
+        min-height: 48px; // Pixel Perfect (32px)
+    }
+
+    /* Mobile */
+    @media (max-width: 899px) {
+        min-height: unset;
+    }
+}
+
+.card__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(30 / 14);
+    color: $paragraphColor;
+
+    /* Tablet */
+    @media (max-width: 1199px) {
+        line-height: calc(22 / 14);
+    }
+}
+
+// @function round($value, $fractionDigits: 0) {
+//     $power: math.pow(10, $fractionDigits);
+//     @return math.div(math.round($power * $value), $power);
+//   }
