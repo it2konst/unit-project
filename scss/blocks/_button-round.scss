@@ -7,11 +7,11 @@
     border-radius: 50%;
     background-color: #fff;
     border: none;
-    
     cursor: pointer;
-    transition: .3s;
+
+    transition: background-color 0.3s;
 
     &:hover {
-        background-color: #00C470;
-    } 
+        background-color: #00c470;
+    }
 }
